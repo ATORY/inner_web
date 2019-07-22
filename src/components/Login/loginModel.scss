@@ -1,0 +1,28 @@
+.loginModelMask {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.5);
+
+  .modelContainer {
+    width: 500px;
+    position: absolute;
+    background: #fff;
+    top: 100px;
+    padding: 45px;
+    border-radius: 15px;
+
+    .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 2rem;
+    }
+  }
+}

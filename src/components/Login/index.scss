@@ -1,0 +1,13 @@
+.loginContainer {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    padding: 2rem 5rem;
+  }
+}

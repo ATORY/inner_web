@@ -1,0 +1,47 @@
+.image-modal {
+  max-width: 600px;
+  .modal-content {
+    position: relative;
+    height: 600px;
+    input {
+      width: 100%;
+    }
+    .modal-path {
+      position: absolute;
+      bottom: 0;
+    }
+    .file-container {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 40px;
+      top: 50px;
+      left: 0;
+      right: 0;
+      overflow-y: auto;
+      padding: 0 10px;
+
+      .cell-file-item {
+        border: 1px dotted white;
+        position: relative;
+      }
+      .cell-file-item.select {
+        border: 1px dotted #d3d3d3;
+        &::after {
+          content: '✔';
+          position: absolute;
+          right: 0;
+          top: 0;
+          position: absolute;
+          // right: -10px;
+          // top: -10px;
+          width: 20px;
+          height: 20px;
+          // background: rgb(26, 202, 93);
+          border-radius: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+section.article-card {
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  width: 400px;
+  box-sizing: border-box;
+  // padding: 0 15px;
+  margin: 1.2rem 0;
+  color: rgb(129, 127, 127);
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .image {
+    height: 120px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: lightblue;
+  }
+
+  .intro {
+    padding: 5px 0;
+    // border: 1px solid #c3c3c3;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 10px 10px 10px;
+    > div {
+      overflow: hidden;
+    }
+    div.ct {
+      // tags
+      // height: 25px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: black;
+      margin: 3px 0;
+    }
+    p {
+      font-size: 1rem;
+      overflow: hidden;
+      text-decoration: blink;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 0rem;
+    }
+    span.tag,
+    span.category {
+      padding: 0px 5px;
+      display: block;
+      float: left;
+      margin: 0 2px;
+      font-size: 12px;
+      margin-left: 14px;
+      height: 16px;
+      color: white;
+      position: relative;
+      background-color: cornflowerblue;
+      //   &:hover {
+      //     cursor: pointer;
+      //     svg {
+      //       display: inline;
+      //     }
+      //   }
+      &::before {
+        content: ' ';
+        position: absolute;
+        left: -18px;
+        top: 0;
+        border: 8px solid transparent;
+        border-right: 10px solid cornflowerblue;
+      }
+      &::after {
+        content: ' ';
+        position: absolute;
+        left: -3px;
+        top: 5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: white;
+      }
+      svg {
+        display: none;
+        position: absolute;
+        top: -6px;
+        color: #55626f;
+      }
+    }
+  }
+
+  .publisher {
+    // border: 1px solid #c3c3c3;
+    border-top: none;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 2rem;
+      border-radius: 50%;
+      height: 2rem;
+    }
+    > div {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 5px;
+      span {
+        display: block;
+        &.time {
+          font-size: 12px;
+        }
+      }
+      .mark {
+        width: 40px;
+        height: 35px;
+        text-align: center;
+        background: white;
+      }
+    }
+  }
+}

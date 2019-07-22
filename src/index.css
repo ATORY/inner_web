@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.inner-grid {
+  display: flex;
+  padding: 0;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.inner-aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  background: linear-gradient(135deg, #8f75da 0, #727cf5 60%);
+  width: 16rem;
+  transition: all 0.1s ease;
+}
+
+.inner-aside button,
+.inner-aside button:hover,
+.inner-aside button:focus {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+.inner-aside button:hover {
+}
+.inner-aside .inner-logo-header {
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.inner-aside-minimize .inner-aside .inner-logo-header {
+  justify-content: center;
+}
+
+.inner-aside .inner-logo-header img {
+  height: 100%;
+}
+.inner-aside-minimize .inner-aside {
+  width: 5rem;
+}
+
+.inner-aside-minimize-fixed .inner-aside {
+  width: 5rem;
+}
+
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.1s ease;
+  flex-grow: 1;
+}
+
+.inner-wrapper.writer {
+  flex-direction: initial;
+}
+
+.inner-auth .inner-wrapper {
+  padding-left: 16rem;
+}
+
+.inner-aside-minimize .inner-wrapper {
+  padding-left: 5rem;
+  padding-right: 0;
+}
+
+/* header.noauth {
+  padding: 0 12rem;
+} */
+main.noauth {
+}
+
+main {
+  padding: 0;
+  margin-top: 5rem;
+}
+
+main > div {
+  padding: 0.5rem;
+}
+
+article {
+  /* margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 1rem; */
+  padding-top: 0;
+}
+
+img.logo {
+  height: 80%;
+  /* margin-right: 2rem; */
+}
+
+button.icon-btn {
+  font-size: 1.5rem !important;
+}
+
+.markdown-body img[alt='banner'] {
+  width: 100%;
+}

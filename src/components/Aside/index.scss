@@ -1,0 +1,113 @@
+.inner-aside {
+  overflow: hidden;
+  > div {
+    padding: 0.5rem 1rem;
+  }
+  > div.inner-aside-nav {
+    padding: 0;
+    margin-top: 1.5rem;
+    /* height: 50%; */
+    // overflow: scroll;
+    overflow-y: auto;
+    bottom: 8rem;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    &::-webkit-scrollbar {
+      width: 0.2rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #c9c9c9;
+    }
+  }
+  .active {
+    a {
+      &::before {
+        content: ' ';
+        border: 2px solid white;
+        height: inherit;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  a {
+    position: relative;
+    color: white;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    box-sizing: border-box;
+    &:hover {
+      background: #535dd4;
+    }
+    svg {
+      min-width: 30px;
+    }
+    .inner-aside-item {
+      font-size: 1.1rem;
+    }
+    .message-tint {
+      position: absolute;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #f94040;
+      display: block;
+      top: 10px;
+      left: 3rem;
+    }
+  }
+
+  .inner-aside-avator {
+    display: flex;
+    // justify-content: space-between;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    // height: 5rem;
+    color: white;
+    font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+      background: gray;
+    }
+    svg {
+      min-width: 30px;
+    }
+    div {
+      font-size: initial;
+    }
+    // img {
+    //   width: 4rem;
+    //   height: 4rem;
+    //   // height: 100%;
+    //   // width: 100%;
+    //   // width: 3.5rem;
+    //   border-radius: 50%;
+    //   border: 1px solid white;
+    // }
+  }
+
+  .inner-aside-item {
+    margin: 0.2rem 0.5rem;
+  }
+}
+.inner-aside-mini {
+  a {
+    justify-content: center;
+  }
+  .inner-aside-avator {
+    // padding: 0.5rem;
+    justify-content: center;
+  }
+  .inner-aside-item {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.cell-file-item {
+  padding: 0.5rem 1rem;
+  font-size: 3rem;
+  box-sizing: content-box;
+  width: 5rem;
+  text-align: center;
+  user-select: none;
+  border: 1px solid white;
+  display: block;
+  color: cornflowerblue;
+  max-height: 120px;
+  overflow: hidden;
+  p {
+    font-size: 0.8rem;
+    color: initial;
+    word-break: break-all;
+  }
+
+  img {
+    width: 100%;
+  }
+}

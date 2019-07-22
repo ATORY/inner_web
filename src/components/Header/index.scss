@@ -1,0 +1,71 @@
+.inner-aside-minimize header {
+  padding-left: 7rem;
+}
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  transition: all 0.1s ease;
+  padding: 0.5rem 1rem;
+  padding-left: 16rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  nav {
+    flex-grow: 1;
+    height: 4rem;
+    padding-left: 2.5rem !important;
+  }
+  &.noauth {
+    padding: 0 12rem;
+
+    nav.navbar {
+      // max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.home {
+  .right-nav {
+    align-items: center;
+
+    img.avator {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  a,
+  a:hover {
+    text-decoration-line: none;
+    color: inherit;
+  }
+
+  nav .nav-item.active {
+    color: white;
+  }
+
+  nav .nav-item {
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    color: #d3d3d3;
+  }
+
+  nav .ml-auto .nav-item {
+    margin-right: 0rem;
+    margin-left: 1rem;
+    color: white;
+  }
+}
